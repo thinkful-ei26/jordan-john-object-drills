@@ -6,17 +6,19 @@
 // bang => 'bang'
 
 
-function updateObject(myObj) {
+function updateObject(obj) {
 
-   myObj.foo = 'foo';
-   myObj.bar = 'bar';
-   myObj.bizz = 'bizz';
-   myObj.bang = 'bang';
- 
-return myObj;
+const newObj = {
+   foo: 'foo',
+   bar: 'bar',
+   bizz: 'bizz',
+   bang: 'bang',
+    }
+
+return Object.assign(obj, newObj);
 
 }
 
-console.log(updateObject(myObj))
+console.log(updateObject());
 
 
