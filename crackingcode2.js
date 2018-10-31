@@ -1,22 +1,34 @@
 'use strict';
 
+// Redo your Cracking the Code problem from String Drills but this time use an object as your cipher. 
 
-function codeCracker (string) {
-  let stringArray = string.split(' ');
-  console.log(stringArray);
-  let resultString = '';
-  for (let i = 0; i < stringArray.length; i++){
-    if (stringArray[i][0] === 'a') {
-      resultString += stringArray[i][1];
-    } else if (stringArray[i][0] === 'b') {
-      resultString += stringArray[i][2];
-    } else if (stringArray[i][0] === 'c'){
-      resultString += stringArray[i][3];
-    } else if (stringArray[i][0] === 'd'){
-      resultString += stringArray[i][4];
-    } else {resultString += ' ';}
-  }
-  return resultString;
-}
+let decipher = {
+    a: 2,
+    b: 3,
+    c: 4,
+    d: 5,
+};
+// Additionally, create a decodeWords function that 
+// utilizes your decode function to accept a single string of words, 
+// and then return the fully decoded message as a string.
+function decode(str){
+    let stringArray = str.split(' ');
+     let resultStr = '';
+ 
+     for (let i = 0; i < stringArray.length; i++) {
+         if (decipher.a === stringArray[i][-1]) {
+             resultStr += decipher[i][a];
+         } else {
+             resultStr += ' ';
+         }
+         return resultStr;
+     }
+    }
 
-console.log(codeCracker('craft block argon meter bells brown croon droop'));
+    let testString = 'craft block argon meter bells brown croon droop'
+
+function decodeWords() {
+    return decode(testString)
+    }
+
+console.log(decodeWords)
