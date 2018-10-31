@@ -7,18 +7,11 @@
 
 
 function updateObject(obj) {
-
-const newObj = {
-   foo: 'foo',
-   bar: 'bar',
-   bizz: 'bizz',
-   bang: 'bang',
-    }
-
-return Object.assign(obj, newObj);
-
+    obj.foo = 'foo';
+    obj.bar = 'bar'; 
+    obj.bizz = "bizz"; 
+    obj.bang = 'bang';
+  return obj
 }
 
-console.log(updateObject());
-
-
+console.log(updateObject(obj.foo));
