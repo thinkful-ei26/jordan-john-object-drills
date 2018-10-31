@@ -32,33 +32,38 @@ function createCharacter(nickName, race, origin, x, y) {
     }
 }
 
-const gandalfTheGrey = createCharacter('Gandalf', 'Wizard', 'Middle Earth', 10, 6);
-gandalfTheGrey.describe();
-gandalfTheGrey.evaluateFight();
+const characters = [
 
-const bilboBaggins = createCharacter('Bilbo', 'Hobbit', 'The Shire', 2, 1);
-bilboBaggins.describe();
-bilboBaggins.evaluateFight();
+gandalfTheGrey = createCharacter('Gandalf', 'Wizard', 'Middle Earth', 10, 6),
+gandalfTheGrey.describe(),
+gandalfTheGrey.evaluateFight(),
 
-const frodoBaggins = createCharacter('Frodo', 'Hobbit', 'The Shire', 3, 2);
-frodoBaggins.describe();
-frodoBaggins.evaluateFight();
+bilboBaggins = createCharacter('Bilbo', 'Hobbit', 'The Shire', 2, 1),
+bilboBaggins.describe(),
+bilboBaggins.evaluateFight(),
 
-const aragornSonOfArathorn= createCharacter('Aragorn', 'Man', 'Dunnedain', 6, 8);
-aragornSonOfArathorn.describe();
-aragornSonOfArathorn.evaluateFight();
+frodoBaggins = createCharacter('Frodo', 'Hobbit', 'The Shire', 3, 2),
+frodoBaggins.describe(),
+frodoBaggins.evaluateFight(),
 
-const legolas = createCharacter('Legolas', 'Elf', 'Woodland Realm', 8, 5);
-legolas.describe();
-legolas.evaluateFight();
+aragornSonOfArathorn= createCharacter('Aragorn', 'Man', 'Dunnedain', 6, 8),
+aragornSonOfArathorn.describe(),
+aragornSonOfArathorn.evaluateFight(),
 
-const arwenUndomiel = createCharacter('Arwen', 'Half-Elf', 'Rivendell', 6, 4);
-arwenUndomiel.describe();
-arwenUndomiel.evaluateFight();
+legolas = createCharacter('Legolas', 'Elf', 'Woodland Realm', 8, 5),
+legolas.describe(),
+legolas.evaluateFight(),
+
+arwenUndomiel = createCharacter('Arwen', 'Half-Elf', 'Rivendell', 6, 4),
+arwenUndomiel.describe(),
+arwenUndomiel.evaluateFight(),
+];
 
 
-const characters = [gandalfTheGrey, bilboBaggins, frodoBaggins, aragornSonOfArathorn, legolas, arwenUndomiel]
-const findAragorn = characters.find(Aragorn);
+const findAragorn = characters.find(function(element) {
+    return element = aragornSonOfArathorn.describe();
+})
+
 
 
 
